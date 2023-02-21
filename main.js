@@ -28,7 +28,33 @@ let addList = function () {
   });
 };
 
+document.onkeydown = (event) => {
+  switch (event.which) {
+    case 13:
+      addList();
+      break;
+
+    default:
+      break;
+  }
+};
 button.addEventListener("click", addList);
+
+//#region some trials
+// button.addEventListener("keypress", function (event) {
+//   if (event.key === "Enter") {
+//     event.preventDefault();
+//     document.querySelector("todo_list_button").click();
+//   }
+// });
+
+// button.addEventListener("keyup", (event) => {
+//   if (event.code === "Enter") {
+//     event.preventDefault();
+//     // document.querySelector("todo_list_button").submit();
+//     button.addEventListener("click", addList);
+//   }
+// });
 
 // console.log(close_btn);
 // console.log(todo_list);
@@ -84,3 +110,4 @@ button.addEventListener("click", addList);
 //     closee[element].style.display = "none";
 //   }
 // });
+//#endregion
