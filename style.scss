@@ -6,6 +6,7 @@
 body {
   background-color: #6394ef;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .todo_list {
@@ -69,7 +70,7 @@ body {
   align-items: center;
   cursor: pointer;
   position: relative;
-  padding: 5px 0px;
+  padding: 8px 0px;
   list-style-type: none;
   font-size: 18px;
   transition: 0.2s;
@@ -78,4 +79,6 @@ body {
 .closee {
   background-color: yellow;
   color: black;
+  padding: 5px;
+  border-radius: 7px;
 }
